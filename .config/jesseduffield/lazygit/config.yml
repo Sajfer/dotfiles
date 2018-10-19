@@ -1,0 +1,15 @@
+  gui:
+    # stuff relating to the UI
+    scrollHeight: 2 # how many lines you scroll by
+    theme:
+      activeBorderColor:
+        - green
+        - bold
+      inactiveBorderColor:
+        - white
+      optionsTextColor:
+        - green
+  git:
+    # stuff relating to git
+  os:
+    # stuff relating to the OS
