@@ -8,7 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="gruvbox"
+SOLARIZED_THEME="dark"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -65,6 +67,7 @@ ZSH_THEME="agnoster"
 plugins=(
   git
   zsh-autosuggestions
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -99,12 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ll="ls -al"
+alias k="kubectl"
 
 export PATH=$PATH:/home/sajfer/.go/bin
 
 export GOPATH=/home/sajfer/go
 
-export PATH=$PATH:/home/sajfer/go/bin
+export PATH=/home/sajfer/go/bin:$PATH
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 
